@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>com.hhk02.reiexplore.reiexplore.ReIExplore</exec.mainClass>
+        <exec.mainClass>com.hhk02.sspct.sspct.SSPCT</exec.mainClass>
     </properties>
     <name>Simple Shutdown PC Time</name>
     <description>Shutdown the computer in a specific hour and shutdown the computer</description>

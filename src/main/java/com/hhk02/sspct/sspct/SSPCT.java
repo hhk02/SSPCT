@@ -25,27 +25,24 @@ public class SSPCT {
     {
         
         var reloj = LocalTime.now();
-        if (System.getProperty("os.name").equals("Linux"))
+        if(reloj.getHour() <= horasel  & reloj.getMinute() >= minsel)
         {
-            if(reloj.getHour() <= horasel  & reloj.getMinute() >= minsel)
-            {
-                ApagarEquipo();
-            }
+            ApagarEquipo();
         }
-        if (System.getProperty("os.name").equals("Windows"))
-        {
-            if(reloj.getHour() <= horasel  & reloj.getMinute() >= minsel)
-            {
-                ApagarEquipo();
-            }
-        }
-        
+    
     }
     public static void ApagarEquipo()
     {
         var cmd = Runtime.getRuntime();
         try {
-            cmd.exec("systemctl poweroff");
+            if (System.getProperty("os.name").equals("Windows")) {
+                cmd.exec("shutdown -s -t 1");
+            }
+            if (System.getProperty("os.name").equals("Linux"))
+            {
+                cmd.exec("systemctl poweroff");
+            }
+            
         } catch (IOException ex) {
             Logger.getLogger(SSPCT.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -56,6 +53,7 @@ public class SSPCT {
     public static void main(String[] args) {
         
         var isRunning = true;
+        System.out.println("La PC se apagara a las" + horasel+":"+minsel);
         System.out.println(System.getProperty("os.name"));
         while(isRunning)
         {
