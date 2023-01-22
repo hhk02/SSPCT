@@ -24,4 +24,14 @@ java.exe -jar SSPCT-1.0-SNAPSHOT.jar
 
 
 ```
+## Instructions
 
+At first glance it seems that the program does not do anything, however it is waiting for the user to write the hour and then the exact minute.
+
+Example:
+In the first line represents the hour: 06
+In the second line represents the exact minute: 02
+
+In this case we are telling the computer to turn off at that exact time
+
+Once we have finished specifying the time, it will detect which operating system we are running. and at that time the machine will turn off.
