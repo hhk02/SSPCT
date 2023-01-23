@@ -1,12 +1,12 @@
 ## SSPCT
 
-# Shutdown the computer in specific hour and minute.
+# Apagar el ordenador/computadora en una hora determinada
 
-This it's my first Java application. the objective of this simple program it's shutdown the computer in the specify time.
+Esta es mi primera aplicación en Java con el proposito especificado anteriormente en la descripción.
 
-# How to use?
+# Como utilizarlo?
 
-Works for the moment in Windows and Linux.
+Funciona en Linux y en Windows, Mac (no testeado)
 
 # Linux
 
@@ -16,22 +16,21 @@ java -jar SSPCT.jar
 ```
 # Windows
 
-Open CMD or PowerShell and write this:
+Abre el CMD (Command Prompt) o PowerShell
 
-# PowerShell and CMD+
 ```
 java.exe -jar SSPCT.jar
 
 
 ```
-## Instructions
+## Instruciones
 
-At first glance it seems that the program does not do anything, however it is waiting for the user to write the hour and then the exact minute.
+A simple vista parece que el programa no hace nada, sin embargo está esperando que el usuario escriba la hora y luego el minuto exacto.
 
-Example:
-In the first line represents the hour: 06
-In the second line represents the exact minute: 02
+Ejemplo:
+En la primera línea representa la hora: 06
+En la segunda línea representa el minuto exacto: 02
 
-In this case we are telling the computer to turn off at that exact time
+En este caso le estamos diciendo a la computadora que se apague en ese momento exacto
 
-Once we have finished specifying the time, it will detect which operating system we are running. and at that time the machine will turn off.
+Una vez hayamos terminado de especificar la hora, detectará qué sistema operativo estamos ejecutando. y en ese momento la máquina se apagará.
