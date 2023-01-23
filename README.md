@@ -11,7 +11,7 @@ Works for the moment in Windows and Linux.
 # Linux
 
 ```
-java -jar SSPCT-1.0-SNAPSHOT.jar
+java -jar SSPCT.jar
 
 ```
 # Windows
@@ -20,7 +20,7 @@ Open CMD or PowerShell and write this:
 
 # PowerShell and CMD+
 ```
-java.exe -jar SSPCT-1.0-SNAPSHOT.jar
+java.exe -jar SSPCT.jar
 
 
 ```
